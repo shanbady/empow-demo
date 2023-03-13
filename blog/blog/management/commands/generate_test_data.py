@@ -34,7 +34,8 @@ class Command(BaseCommand):
         ]
 
         posts = []
-
+        # create root user
+        root_user = User.objects.create_superuser(email="test@test.com", username='root', password='password')
         for username in random.sample(usernames, 6):
             user, created = User.objects.get_or_create(username=username, password='password')
             numposts = random.randrange(1,4)
