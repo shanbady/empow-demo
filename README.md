@@ -24,3 +24,6 @@ password: password
 
 Then navigate to a specific blog post in the api browser and hit "delete". You will note that the blog post no longer shows up anywhere on the api explorer. However, the blog post will still be accessible in django admin. Go to /admin and verify that that the post shows up in the admin browser.
 You can also test this soft delete functionality with the post comments model.
+
+
+There are also tests available under content/tests.py
