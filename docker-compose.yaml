@@ -35,7 +35,6 @@ services:
       - ./blog/static:/www/static
     links:
       - web:web
-
   postgres:
     restart: always
     image: postgres:latest

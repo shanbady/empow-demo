@@ -4,7 +4,10 @@ A demo dockerized api site for empow studios
 # Usage
 To get this running you must first have docker installed.
 
-Once you have docker, you can start the app by running: `docker-compose up --build --detach`
+Once you have docker, you can start the app by running:
+`docker-compose up --build --detach`
+
+(note: if this is the first time running -  you will need to wait a minute or two until the database finishes setting up before visiting localhost)
 
 Docker will initialize 3 containers:
 1. An nginx container for serving static assets
