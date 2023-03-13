@@ -18,7 +18,8 @@ Once the the containers are running, you may visit http://localhost to see the r
 
 
 # Testing the "soft delete" functionality
-To test a soft delete, login to the site as a superuser with the following credentials:
+To test a soft delete, login to the site as a superuser with the following credentials
+
 username: root
 password: password
 
