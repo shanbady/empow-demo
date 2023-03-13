@@ -25,7 +25,8 @@ class PostCommentViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
-    queryset = PostComment.objects.filter(deleted=False).order_by('-created_at')
+    post_ids = Post.objects.filter(deleted=False).values_list('id')
+    queryset = PostComment.objects.filter(deleted=False, post__id__in=post_ids).order_by('-created_at')
     serializer_class = PostCommentSerializer
     permission_classes = [permissions.IsAuthenticated]
 
