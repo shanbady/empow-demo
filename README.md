@@ -21,6 +21,7 @@ Once the the containers are running, you may visit http://localhost to see the r
 To test a soft delete, login to the site as a superuser with the following credentials
 
 username: root
+
 password: password
 
 Then navigate to a specific blog post in the api browser and hit "delete". You will note that the blog post no longer shows up anywhere on the api explorer. However, the blog post will still be accessible in django admin. Go to /admin and verify that that the post shows up in the admin browser.
