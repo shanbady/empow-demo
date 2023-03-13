@@ -1,7 +1,7 @@
 # empow-demo
 A demo dockerized api site for empow studios
 
-# Usage
+### Usage
 To get this running you must first have docker installed.
 
 Once you have docker, you can start the app by running:
@@ -20,7 +20,7 @@ The docker compose also runs a django management script that creates some test p
 Once the the containers are running, you may visit http://localhost to see the running api server.
 
 
-# Testing the "soft delete" functionality
+### Testing the "soft delete" functionality
 To test a soft delete, login to the site as a superuser with the following credentials
 
 **username**: root
